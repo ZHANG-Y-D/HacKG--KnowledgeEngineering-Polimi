@@ -55,13 +55,13 @@
         <ObjectProperty IRI="#hasPrize"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSkills"/>
+        <ObjectProperty IRI="#hasSkill"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTeam"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTechnology"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#projectof"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hackathon-description-header"/>
@@ -265,16 +265,10 @@
         <DataProperty IRI="#projects-info"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#skills-info"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#team-size"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#teams-info"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#technologies-info"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#url"/>
@@ -283,6 +277,10 @@
         <Class IRI="#skills"/>
         <Class IRI="#technologies"/>
     </EquivalentClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSkill"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hackathonOf"/>
     </FunctionalObjectProperty>
@@ -291,9 +289,6 @@
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#hasPrize"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#projectof"/>
     </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hackathonOf"/>
@@ -316,15 +311,15 @@
         <Class IRI="#hackathons"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSkills"/>
+        <ObjectProperty IRI="#hasSkill"/>
         <Class IRI="#participants"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTechnology"/>
+        <ObjectProperty IRI="#hasTeam"/>
         <Class IRI="#projects"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#projectof"/>
+        <ObjectProperty IRI="#hasTechnology"/>
         <Class IRI="#projects"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -348,16 +343,16 @@
         <Class IRI="#prizes"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSkills"/>
+        <ObjectProperty IRI="#hasSkill"/>
         <Class IRI="#skills"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTeam"/>
+        <Class IRI="#teams"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTechnology"/>
         <Class IRI="#technologies"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#projectof"/>
-        <Class IRI="#teams"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hackathon-description-header"/>
@@ -465,11 +460,7 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#name"/>
-        <DataProperty IRI="#skills-info"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#name"/>
-        <DataProperty IRI="#technologies-info"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#participant-bio"/>
@@ -633,11 +624,7 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#url"/>
-        <DataProperty IRI="#skills-info"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#url"/>
-        <DataProperty IRI="#technologies-info"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-description-header"/>
