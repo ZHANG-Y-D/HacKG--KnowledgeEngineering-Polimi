@@ -1,0 +1,204 @@
+prefixes:
+  hac: "http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+mappings:
+  projects:
+    sources:
+      - ['projects.json~jsonpath', "$.[*]"]
+    s: hac:$(project-id)
+    po:
+      - [a, hac:projects]
+      - [hac:hackathon-winner,$(hackathon-winner),xsd:string]
+      - [hac:hackathon-name,$(hackathon-name),xsd:string]
+      - [hac:project-technologies-used, $(project-technologies-used),xsd:integer]
+      - [hac:project-video,$(project-video)]
+      - [hac:project-basis,$(project-basis)]
+      - [hac:project-challenges,$(project-challenges)]
+      - [hac:project-future-plans,$(project-future-plans)]
+      - [hac:project-purpose,$(project-purpose)]
+      - [hac:project-title,$(project-title),xsd:string]
+      - [hac:project-inspiration,$(project-inspiration),xsd:string]
+      - [hac:project-lessons-learned,$(project-lessons-learned)]
+      - [hac:project-accomplishments,$(project-accomplishments)]
+      - [hac:project-likes,$(project-likes),xsd:integer]
+      - [hac:project-subtitle,$(project-subtitle),xsd:integer]
+      - [hac:project-github-url,$(project-github-url),xsd:string]
+      - [hac:project-number-of-comments,$(project-number-of-comments),xsd:integer]
+      - [hac:team-size,$(team-size),xsd:integer]
+      - [hac:project-creation-timestamp,$(project-creation-timestamp),xsd:datetime]
+      - [hac:project-url,$(project-url),xsd:string]
+      
+      - p: hac:hackathonOf
+        o:
+          - mapping: hackathons
+            condition:
+              function: equal
+              parameters:
+              - [ str1, $(hackathon-id), s]
+              - [ str2, $(hackathon-id), o]
+              
+              
+      - p: hac:hasTechnology
+        o:
+          - mapping: technologies
+            condition:
+              function: equal
+              parameters:
+              - [ str1, 1, s]
+              - [ str2, 1, o]
+              
+      - p: hac:hasTeamMember
+        o:
+          - mapping: teamMember
+            condition:
+              function: equal
+              parameters:
+              - [ str1, 1, s]
+              - [ str2, 1, o]
+      
+  hackathons:
+    sources:
+      - ['hackathons.json~jsonpath', "$.[*]"]
+    s: hac:$(hackathon-id)
+    po:
+      - [a, hac:hackathons]
+      - [hac:hackathon-description-text, $(hackathon-description-text)]
+      - [hac:hackathon-number-of-prizes,$(hackathon-number-of-prizes),xsd:integer]
+      - [hac:hackathon-number-of-judges,$(hackathon-number-of-judges),xsd:integer]
+      - [hac:hackathon-eligibility,$(hackathon-eligibility)]
+      - [hac:hackathon-number-of-participants,$(hackathon-number-of-participants),xsd:integer]
+      - [hac:hackathon-is-colocated,$(hackathon-is-colocated)]
+      - [hac:hackathon-has-ended,$(hackathon-has-ended)]
+      - [hac:hackathon-number-of-judging-criteria,$(hackathon-number-of-judging-criteria),xsd:integer]
+      - [hac:hackathon-requirements,$(hackathon-requirements)]
+      - [hac:hackathon-rules,$(hackathon-rules),xsd:string]
+      - [hac:hackathon-location-google-maps,$(hackathon-location-google-maps),xsd:string]
+      - [hac:hackathon-url,$(hackathon-url),xsd:string]
+      - [hac:hackathon-location-address,$(hackathon-location-address),xsd:string]
+      - [hac:hackathon-description-header,$(hackathon-description-header),xsd:string]
+      - [hac:hackathon-prizes-total,$(hackathon-prizes-total),xsd:integer]
+      - [hac:hackathon-location-description,$(hackathon-location-description)]
+      - [hac:hackathon-end-date,$(hackathon-end-date),xsd:datetime]
+      - [hac:has-projects,$(has-projects)]
+      - p: hac:hasJudge
+        o:
+          - mapping: hackathon-judges
+            condition:
+              function: equal
+              parameters:
+              - [ str1, 1, s]
+              - [ str2, 1, o]
+              
+      - p: hac:hasPrize
+        o:
+          - mapping: hackathon-prizes
+            condition:
+              function: equal
+              parameters:
+              - [str1, 1, s]
+              - [str2, 1, o]
+      
+      - p: hac:hasJudgingCriteria
+        o:
+          - mapping: hackathon-judging-criteria
+            condition:
+              function: equal
+              parameters:
+              - [str1, 1, s]
+              - [str2, 1, o]
+              
+  hackathon-judges:
+    sources:
+      - ['hackathons.json~jsonpath', '$[*].hackathon-judges[*]']
+    s: hac:$(judge-name)
+    po:
+      - [a, hac:judges]
+      - [hac:judge-role, $(judge-role),xsd:string]
+      - [hac:judge-name, $(judge-name),xsd:string]
+  
+  hackathon-prizes:
+    sources:
+      - ['hackathons.json~jsonpath', '$[*].hackathon-prizes[*]']
+    s: hac:$(prize-title)
+    po:
+      - [a, hac:prizes]
+      - [hac:prize-content, $(prize-content),xsd:string]
+      - [hac:prize-title, $(prize-title),xsd:string]
+  
+  hackathon-judging-criteria:
+    sources:
+      - ['hackathons.json~jsonpath', '$[*].hackathon-judging-criteria[*]']
+    s: hac:$(judging-criterion)
+    po:
+      - [a, hac:judging_criteria]
+      - [hac:judging-criterion, $(judging-criterion),xsd:string]
+      
+  technologies:
+    sources:
+      - ['projects.json~jsonpath', '$.[*].project-technologies[*]']
+    s: hac:$(name)
+    po:
+      - [a, hac:techonologies]
+      - [hac:url,$(url),xsd:string]
+      - [hac:name,$(name),xsd:string]
+  
+  teamMember:
+    sources:
+      - ['projects.json~jsonpath', '$.[*].team[*]']
+    s: hac:$(participant-id)_tName
+    po:
+      - [a, hac:team-member]
+      - [hac:participant-bubble,$(participant-bubble)]
+      - [hac:participant-desc,$(participant-desc),xsd:string]
+      - p: hac:relatesToParticipant
+        o:
+          - mapping: participants
+            condition:
+              function: equal
+              parameters:
+              - [ str1, $(participant-id), s]
+              - [ str2, $(participant-id), o]
+  
+  participants:
+    sources:
+      - ['participants.json~jsonpath', "$.[*]"]
+    s: hac:$(participant-id)
+    po:
+      - [a, hac:participants]
+      - [hac:participant-likes, $(participant-likes),xsd:integer]
+      - [hac:participant-projects,$(participant-projects),xsd:integer]
+      - [hac:participant-url,$(participant-url),xsd:string]
+      - [hac:participant-name,$(participant-name),xsd:string]
+      - [hac:participant-followers,$(participant-followers),xsd:integer]
+      - [hac:participant-location,$(participant-location),xsd:string]
+      - [hac:participant-bio,$(participant-bio),xsd:string]
+      - [hac:participant-linkedin,$(participant-linkedin),xsd:string]
+      - [hac:participant-website,$(participant-website),xsd:string]
+      - [hac:participant-github,$(participant-github),xsd:string]
+      - [hac:participant-hackathons,$(participant-hachathons),xsd:integer]
+      - [hac:participant-following,$(participant-following),xsd:integer]
+      - [hac:participant-number-of-skills,$(participant-number-of-skills),xsd:integer]
+      - [hac:participant-twitter,$(participant-twitter),xsd:string]
+      
+      - p: hac:hasSkill
+        o:
+          - mapping: participant-skills
+            condition:
+              function: equal
+              parameters:
+              - [ str1, 1, s]
+              - [ str2, 1, o]
+              
+      
+  participant-skills:
+    sources:
+      - ['participants.json~jsonpath', '$[*].participant-skills[*]']
+    s: hac:$(name)
+    po:
+      - [a, hac:skills]
+      - [hac:url, $(url),xsd:string]
+      - [hac:name, $(name),xsd:string]  
+      
+  
+  
