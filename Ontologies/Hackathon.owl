@@ -944,7 +944,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hackathon-location-google-maps"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hackathon-name"/>
@@ -980,7 +980,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hackathon-url"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hackathon-winner"/>
