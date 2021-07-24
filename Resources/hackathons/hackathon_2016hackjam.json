@@ -1,1 +1,83 @@
-{"hackathon-description-text": "\nDifferent from any traditional Hackathon, hackJam understands your interests and focus mostly on the technical side. \u00a0Codes and creativity are what we are looking forward to. \u00a0Putting aside the business perspective and setting the workable time period to an explosive 6 hours, it is definitely a great opportunity for new comers, and of course the well-experienced, to come and have a taste of our event. \u00a0Link up with other programmers, brainstorm, discuss, and be innovative!", "hackathon-number-of-prizes": "6", "hackathon-id": "2016hackjam", "hackathon-judges": [{"judge-role": "Microsoft Hong Kong Limited", "judge-name": "Samson Lee"}, {"judge-role": "Skygear", "judge-name": "Ben Cheng"}, {"judge-role": "g0vhk", "judge-name": "Ho Wa Wong"}, {"judge-role": "Open Source Hong Kong", "judge-name": "Sammy Fung"}, {"judge-role": "BSD Code and Design Academy", "judge-name": "Nickey Khemchandani"}], "hackathon-number-of-judges": "5", "hackathon-eligibility": "", "hackathon-number-of-participants": "80", "hackathon-is-colocated": "True", "hackathon-has-ended": "True", "hackathon-number-of-judging-criteria": "4", "hackathon-requirements": "", "hackathon-rules": "\nSuggested team size is\u00a03-6. Maximum 6 team members.\n2 Oct, 2016 (Sunday)\n15:30 (Competition ends)\n\n17:00 (expected)\n\u00a0", "hackathon-prizes": [{"prize-content": "", "prize-title": "Champion - Microsoft Surface Pro 4"}, {"prize-content": "", "prize-title": "First Runner Up - VR devices"}, {"prize-content": "", "prize-title": "Second Runner Up - Orico USB HUB"}, {"prize-content": "", "prize-title": "Best Technical Implementation - Free .tech domains (By Radix Registry)"}, {"prize-content": "", "prize-title": "Best Open Source Developers - Free PyCon HK 2016 (An open source conference) tickets"}, {"prize-content": "", "prize-title": "Honorable mentions"}], "hackathon-location-google-maps": "https://maps.google.com/?q=HKUST (South), Clear Water Bay, Hong Kong", "hackathon-url": "https://2016hackjam.devpost.com/", "hackathon-judging-criteria": [{"judging-criterion": "The user interface and user experience design. It is mainly focused on the front-end features."}, {"judging-criterion": "The team collaboration via Git/GitHub. Teams are expected to show their commit log messages during the final presentations."}, {"judging-criterion": "Teams are expected to explain the best feature in source code level. Judges will use their expertise to evaluate the technical presentation."}, {"judging-criterion": "The overall performance during the final presentations and Q and A sessions."}], "hackathon-location-address": "HKUST (South), Clear Water Bay, Hong Kong", "hackathon-description-header": "hackJam 2016 - Turning ideas into reality @HKUST", "hackathon-prizes-total": "$10,800", "hackathon-location-description": "Hong Kong University of Science and Technology Room 4221 & 4214A", "hackathon-end-date": "2016-10-02", "has-projects": "True"}
+{
+  "hackathon-description-text": "\nDifferent from any traditional Hackathon, hackJam understands your interests and focus mostly on the technical side. \u00a0Codes and creativity are what we are looking forward to. \u00a0Putting aside the business perspective and setting the workable time period to an explosive 6 hours, it is definitely a great opportunity for new comers, and of course the well-experienced, to come and have a taste of our event. \u00a0Link up with other programmers, brainstorm, discuss, and be innovative!",
+  "hackathon-number-of-prizes": "6",
+  "hackathon-id": "2016hackjam",
+  "hackathon-judges": [
+    {
+      "judge-role": "Microsoft Hong Kong Limited",
+      "judge-name": "Samson Lee"
+    },
+    {
+      "judge-role": "Skygear",
+      "judge-name": "Ben Cheng"
+    },
+    {
+      "judge-role": "g0vhk",
+      "judge-name": "Ho Wa Wong"
+    },
+    {
+      "judge-role": "Open Source Hong Kong",
+      "judge-name": "Sammy Fung"
+    },
+    {
+      "judge-role": "BSD Code and Design Academy",
+      "judge-name": "Nickey Khemchandani"
+    }
+  ],
+  "hackathon-number-of-judges": "5",
+  "hackathon-eligibility": "",
+  "hackathon-number-of-participants": "80",
+  "hackathon-is-colocated": "True",
+  "hackathon-has-ended": "True",
+  "hackathon-number-of-judging-criteria": "4",
+  "hackathon-requirements": "",
+  "hackathon-rules": "\nSuggested team size is\u00a03-6. Maximum 6 team members.\n2 Oct, 2016 (Sunday)\n15:30 (Competition ends)\n\n17:00 (expected)\n\u00a0",
+  "hackathon-prizes": [
+    {
+      "prize-content": "",
+      "prize-title": "Champion - Microsoft Surface Pro 4"
+    },
+    {
+      "prize-content": "",
+      "prize-title": "First Runner Up - VR devices"
+    },
+    {
+      "prize-content": "",
+      "prize-title": "Second Runner Up - Orico USB HUB"
+    },
+    {
+      "prize-content": "",
+      "prize-title": "Best Technical Implementation - Free .tech domains (By Radix Registry)"
+    },
+    {
+      "prize-content": "",
+      "prize-title": "Best Open Source Developers - Free PyCon HK 2016 (An open source conference) tickets"
+    },
+    {
+      "prize-content": "",
+      "prize-title": "Honorable mentions"
+    }
+  ],
+  "hackathon-location-google-maps": "https://maps.google.com/?q=HKUST (South), Clear Water Bay, Hong Kong",
+  "hackathon-url": "https://2016hackjam.devpost.com/",
+  "hackathon-judging-criteria": [
+    {
+      "judging-criterion": "The user interface and user experience design. It is mainly focused on the front-end features."
+    },
+    {
+      "judging-criterion": "The team collaboration via Git/GitHub. Teams are expected to show their commit log messages during the final presentations."
+    },
+    {
+      "judging-criterion": "Teams are expected to explain the best feature in source code level. Judges will use their expertise to evaluate the technical presentation."
+    },
+    {
+      "judging-criterion": "The overall performance during the final presentations and Q and A sessions."
+    }
+  ],
+  "hackathon-location-address": "HKUST (South), Clear Water Bay, Hong Kong",
+  "hackathon-description-header": "hackJam 2016 - Turning ideas into reality @HKUST",
+  "hackathon-prizes-total": "$10,800",
+  "hackathon-location-description": "Hong Kong University of Science and Technology Room 4221 & 4214A",
+  "hackathon-end-date": "2016-10-02",
+  "has-projects": "True"
+}

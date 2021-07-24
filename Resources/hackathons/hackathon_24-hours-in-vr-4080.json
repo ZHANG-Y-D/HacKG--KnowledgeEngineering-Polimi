@@ -1,1 +1,58 @@
-{"hackathon-description-text": "\nAt our hackathon, your team of 4 will be able choose an hour of the day and create a conceptual mobile VR product to showcase how you can transform daily routines with VR.", "hackathon-number-of-prizes": "3", "hackathon-id": "24-hours-in-vr-4080", "hackathon-judges": [{"judge-role": "COO of Datavized", "judge-name": "Caitlin Burns"}, {"judge-role": "Gaming at Sketchfab", "judge-name": "Michael Calvert"}, {"judge-role": "Creative Director, StartApp", "judge-name": "Tal Moravkin"}, {"judge-role": "Co-Founder, Svrround", "judge-name": "David Cihelna"}], "hackathon-number-of-judges": "4", "hackathon-eligibility": "", "hackathon-number-of-participants": "25", "hackathon-is-colocated": "True", "hackathon-has-ended": "True", "hackathon-number-of-judging-criteria": "1", "hackathon-requirements": "", "hackathon-rules": "\nYou can read our Code of Conduct\u00a0", "hackathon-prizes": [{"prize-content": "$2,500", "prize-title": "1st Place"}, {"prize-content": "$1,500", "prize-title": "2nd Place"}, {"prize-content": "$1,000", "prize-title": "3rd Place"}], "hackathon-location-google-maps": "https://maps.google.com/?q=150 Broadway, New York, NY 10038, USA", "hackathon-url": "https://24-hours-in-vr-4080.devpost.com/", "hackathon-judging-criteria": [{"judging-criterion": "Please visit our website for a full breakdown of judging criteria:"}], "hackathon-location-address": "150 Broadway, New York, NY 10038, USA", "hackathon-description-header": "Think about how mobile transformed how you manage your everyday life; Now, re-imagine what this daily routine would look like in virtual reality.", "hackathon-prizes-total": "$5,000", "hackathon-location-description": "LMHQ", "hackathon-end-date": "2016-08-21", "has-projects": "True"}
+{
+  "hackathon-description-text": "\nAt our hackathon, your team of 4 will be able choose an hour of the day and create a conceptual mobile VR product to showcase how you can transform daily routines with VR.",
+  "hackathon-number-of-prizes": "3",
+  "hackathon-id": "24-hours-in-vr-4080",
+  "hackathon-judges": [
+    {
+      "judge-role": "COO of Datavized",
+      "judge-name": "Caitlin Burns"
+    },
+    {
+      "judge-role": "Gaming at Sketchfab",
+      "judge-name": "Michael Calvert"
+    },
+    {
+      "judge-role": "Creative Director, StartApp",
+      "judge-name": "Tal Moravkin"
+    },
+    {
+      "judge-role": "Co-Founder, Svrround",
+      "judge-name": "David Cihelna"
+    }
+  ],
+  "hackathon-number-of-judges": "4",
+  "hackathon-eligibility": "",
+  "hackathon-number-of-participants": "25",
+  "hackathon-is-colocated": "True",
+  "hackathon-has-ended": "True",
+  "hackathon-number-of-judging-criteria": "1",
+  "hackathon-requirements": "",
+  "hackathon-rules": "\nYou can read our Code of Conduct\u00a0",
+  "hackathon-prizes": [
+    {
+      "prize-content": "$2,500",
+      "prize-title": "1st Place"
+    },
+    {
+      "prize-content": "$1,500",
+      "prize-title": "2nd Place"
+    },
+    {
+      "prize-content": "$1,000",
+      "prize-title": "3rd Place"
+    }
+  ],
+  "hackathon-location-google-maps": "https://maps.google.com/?q=150 Broadway, New York, NY 10038, USA",
+  "hackathon-url": "https://24-hours-in-vr-4080.devpost.com/",
+  "hackathon-judging-criteria": [
+    {
+      "judging-criterion": "Please visit our website for a full breakdown of judging criteria:"
+    }
+  ],
+  "hackathon-location-address": "150 Broadway, New York, NY 10038, USA",
+  "hackathon-description-header": "Think about how mobile transformed how you manage your everyday life; Now, re-imagine what this daily routine would look like in virtual reality.",
+  "hackathon-prizes-total": "$5,000",
+  "hackathon-location-description": "LMHQ",
+  "hackathon-end-date": "2016-08-21",
+  "has-projects": "True"
+}

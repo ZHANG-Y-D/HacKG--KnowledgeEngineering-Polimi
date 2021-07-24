@@ -1,1 +1,84 @@
-{"hackathon-description-text": "\nLove creating stuff on your computer and LOVE baseball? Come hack with us on March 19 at\u00a05 cities near you: Boston, Philadelphia, Montreal, Chicago and San Francisco!", "hackathon-number-of-prizes": "11", "hackathon-id": "2016baseballhackday", "hackathon-judges": [{"judge-role": "MLB Advanced Media", "judge-name": "Staff members"}], "hackathon-number-of-judges": "1", "hackathon-eligibility": "\nTo be eligible, you do need to be on-site at one of our 5 locations on March 19.\u00a0", "hackathon-number-of-participants": "61", "hackathon-is-colocated": "True", "hackathon-has-ended": "True", "hackathon-number-of-judging-criteria": "3", "hackathon-requirements": "", "hackathon-rules": "\nFirst and foremost, this event will be a success if everyone has a good time, so rule number 1, please don't do anything that would detract from the fairness or fun of the event. Respect your fellow hackers.\nWe are using a hack submission service called \n. In order to win, you need to submit the hacks through it. It helps organizers keep track of the teams and the projects they create.\nHacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programing language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals. Hacks will be judged for 1) Creativity/Originality, 2) Design/Presentation, and 3) Execution/Functionality.\nThe majority of your coding must happen during the event. Some work done prior to the event is allowed, but it should be disclosed at your demo. Ideas that are compact and executable in one-day format are encouraged, and we will reward teams that recognize this time constraint.\nAt 5:30 p.m., you will have 3 to 5 minutes of presentation and demo time (depending on how many projects there are). Judges also will come around during the event and you are encouraged to tell them about your projects at that time.\nPrototypes/mockups for demo is OK, but *working* websites or mobile apps are strongly encouraged.\n\u00a0\n---\u00a0\nAll attendees, sponsors, partners, volunteers and staff at our hackathon are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to ensure a safe environment for everybody.\n\u00a0\nOur hackathon is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, nationality, religion, previous hackathon attendance or computing experience (or lack of any of the aforementioned). We do not tolerate harassment of hackathon participants in any form. Sexual language and imagery is not appropriate at any hackathon venue, including hacks, talks, workshops, parties, social media and other online media. Hackathon participants violating these rules may be sanctioned or expelled from the hackathon without a refund (if applicable) at the discretion of the hackathon organisers.\n\u00a0", "hackathon-prizes": [{"prize-content": "The winning team of the Boston competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).", "prize-title": "Boston Overall Winner"}, {"prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).", "prize-title": "Philly Overall Winner"}, {"prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).", "prize-title": "Montreal Overall Winner"}, {"prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).", "prize-title": "Chicago Overall Winner"}, {"prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).", "prize-title": "San Francisco Overall Winner"}, {"prize-content": "The project across all 5 cities that makes the best use of SportRadar API wins a 2016 season (6-month) Real Time MLB key.", "prize-title": "Best Use of SportRadar API"}, {"prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).", "prize-title": "Boston Runner-Up"}, {"prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).", "prize-title": "Philly Runner-Up"}, {"prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).", "prize-title": "Montreal Runner-Up"}, {"prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).", "prize-title": "Chicago Runner-Up"}, {"prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).", "prize-title": "San Francisco Runner-Up"}], "hackathon-location-google-maps": "", "hackathon-url": "https://2016baseballhackday.devpost.com/", "hackathon-judging-criteria": [{"judging-criterion": ""}, {"judging-criterion": ""}, {"judging-criterion": ""}], "hackathon-location-address": "", "hackathon-description-header": "Fun, friendly, free, one-day, on-site hacking/coding competition for baseball fans. Saturday, March 19.", "hackathon-prizes-total": "$7,040", "hackathon-location-description": "5 locations: Boston, Philadelphia, Montreal, Chicago and San Francisco", "hackathon-end-date": "2016-03-19", "has-projects": "True"}
+{
+  "hackathon-description-text": "\nLove creating stuff on your computer and LOVE baseball? Come hack with us on March 19 at\u00a05 cities near you: Boston, Philadelphia, Montreal, Chicago and San Francisco!",
+  "hackathon-number-of-prizes": "11",
+  "hackathon-id": "2016baseballhackday",
+  "hackathon-judges": [
+    {
+      "judge-role": "MLB Advanced Media",
+      "judge-name": "Staff members"
+    }
+  ],
+  "hackathon-number-of-judges": "1",
+  "hackathon-eligibility": "\nTo be eligible, you do need to be on-site at one of our 5 locations on March 19.\u00a0",
+  "hackathon-number-of-participants": "61",
+  "hackathon-is-colocated": "True",
+  "hackathon-has-ended": "True",
+  "hackathon-number-of-judging-criteria": "3",
+  "hackathon-requirements": "",
+  "hackathon-rules": "\nFirst and foremost, this event will be a success if everyone has a good time, so rule number 1, please don't do anything that would detract from the fairness or fun of the event. Respect your fellow hackers.\nWe are using a hack submission service called \n. In order to win, you need to submit the hacks through it. It helps organizers keep track of the teams and the projects they create.\nHacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programing language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals. Hacks will be judged for 1) Creativity/Originality, 2) Design/Presentation, and 3) Execution/Functionality.\nThe majority of your coding must happen during the event. Some work done prior to the event is allowed, but it should be disclosed at your demo. Ideas that are compact and executable in one-day format are encouraged, and we will reward teams that recognize this time constraint.\nAt 5:30 p.m., you will have 3 to 5 minutes of presentation and demo time (depending on how many projects there are). Judges also will come around during the event and you are encouraged to tell them about your projects at that time.\nPrototypes/mockups for demo is OK, but *working* websites or mobile apps are strongly encouraged.\n\u00a0\n---\u00a0\nAll attendees, sponsors, partners, volunteers and staff at our hackathon are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to ensure a safe environment for everybody.\n\u00a0\nOur hackathon is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, nationality, religion, previous hackathon attendance or computing experience (or lack of any of the aforementioned). We do not tolerate harassment of hackathon participants in any form. Sexual language and imagery is not appropriate at any hackathon venue, including hacks, talks, workshops, parties, social media and other online media. Hackathon participants violating these rules may be sanctioned or expelled from the hackathon without a refund (if applicable) at the discretion of the hackathon organisers.\n\u00a0",
+  "hackathon-prizes": [
+    {
+      "prize-content": "The winning team of the Boston competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Boston Overall Winner"
+    },
+    {
+      "prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Philly Overall Winner"
+    },
+    {
+      "prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Montreal Overall Winner"
+    },
+    {
+      "prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Chicago Overall Winner"
+    },
+    {
+      "prize-content": "The winning team of the city competition will win an annual MLB.TV Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "San Francisco Overall Winner"
+    },
+    {
+      "prize-content": "The project across all 5 cities that makes the best use of SportRadar API wins a 2016 season (6-month) Real Time MLB key.",
+      "prize-title": "Best Use of SportRadar API"
+    },
+    {
+      "prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Boston Runner-Up"
+    },
+    {
+      "prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Philly Runner-Up"
+    },
+    {
+      "prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Montreal Runner-Up"
+    },
+    {
+      "prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "Chicago Runner-Up"
+    },
+    {
+      "prize-content": "The runner-up team of the city competition will win an annual Baseball Prospectus Super Premium subscription for each team member (maximum team size of four).",
+      "prize-title": "San Francisco Runner-Up"
+    }
+  ],
+  "hackathon-location-google-maps": "",
+  "hackathon-url": "https://2016baseballhackday.devpost.com/",
+  "hackathon-judging-criteria": [
+    {
+      "judging-criterion": ""
+    },
+    {
+      "judging-criterion": ""
+    },
+    {
+      "judging-criterion": ""
+    }
+  ],
+  "hackathon-location-address": "",
+  "hackathon-description-header": "Fun, friendly, free, one-day, on-site hacking/coding competition for baseball fans. Saturday, March 19.",
+  "hackathon-prizes-total": "$7,040",
+  "hackathon-location-description": "5 locations: Boston, Philadelphia, Montreal, Chicago and San Francisco",
+  "hackathon-end-date": "2016-03-19",
+  "has-projects": "True"
+}

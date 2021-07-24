@@ -34,7 +34,7 @@
         <Class IRI="#skills"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#teams"/>
+        <Class IRI="#team-members"/>
     </Declaration>
     <Declaration>
         <Class IRI="#technologies"/>
@@ -49,19 +49,19 @@
         <ObjectProperty IRI="#hasJudgingCriteria"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasParticipant"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasPrize"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSkill"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTeam"/>
+        <ObjectProperty IRI="#hasTeamMember"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTechnology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatesToParticipant"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hackathon-description-header"/>
@@ -119,9 +119,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hackathon-rules"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hackathon-url"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hackathon-winner"/>
@@ -265,10 +262,10 @@
         <DataProperty IRI="#projects-info"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#team-size"/>
+        <DataProperty IRI="#team-member-info"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#teams-info"/>
+        <DataProperty IRI="#team-size"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#url"/>
@@ -283,6 +280,9 @@
     </SubObjectPropertyOf>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hackathonOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#relatesToParticipant"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#hasJudgingCriteria"/>
@@ -303,10 +303,6 @@
         <Class IRI="#hackathons"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasParticipant"/>
-        <Class IRI="#projects"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPrize"/>
         <Class IRI="#hackathons"/>
     </ObjectPropertyDomain>
@@ -315,12 +311,16 @@
         <Class IRI="#participants"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTeam"/>
+        <ObjectProperty IRI="#hasTeamMember"/>
         <Class IRI="#projects"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTechnology"/>
         <Class IRI="#projects"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relatesToParticipant"/>
+        <Class IRI="#team-members"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hackathonOf"/>
@@ -335,10 +335,6 @@
         <Class IRI="#judging-criteria"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasParticipant"/>
-        <Class IRI="#participants"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPrize"/>
         <Class IRI="#prizes"/>
     </ObjectPropertyRange>
@@ -347,12 +343,16 @@
         <Class IRI="#skills"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasTeam"/>
-        <Class IRI="#teams"/>
+        <ObjectProperty IRI="#hasTeamMember"/>
+        <Class IRI="#team-members"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTechnology"/>
         <Class IRI="#technologies"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relatesToParticipant"/>
+        <Class IRI="#participants"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hackathon-description-header"/>
@@ -431,14 +431,6 @@
         <DataProperty IRI="#hackathon-info"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#hackathon-url"/>
-        <DataProperty IRI="#hackathon-info"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hackathon-url"/>
-        <DataProperty IRI="#projects-info"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#hackathon-winner"/>
         <DataProperty IRI="#projects-info"/>
     </SubDataPropertyOf>
@@ -468,11 +460,11 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#participant-bubble"/>
-        <DataProperty IRI="#teams-info"/>
+        <DataProperty IRI="#team-member-info"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#participant-desc"/>
-        <DataProperty IRI="#teams-info"/>
+        <DataProperty IRI="#team-member-info"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#participant-followers"/>
@@ -495,10 +487,6 @@
         <DataProperty IRI="#participant-info"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#participant-id"/>
-        <DataProperty IRI="#teams-info"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#participant-likes"/>
         <DataProperty IRI="#participant-info"/>
     </SubDataPropertyOf>
@@ -515,10 +503,6 @@
         <DataProperty IRI="#participant-info"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#participant-name"/>
-        <DataProperty IRI="#teams-info"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#participant-number-of-skills"/>
         <DataProperty IRI="#participant-info"/>
     </SubDataPropertyOf>
@@ -533,10 +517,6 @@
     <SubDataPropertyOf>
         <DataProperty IRI="#participant-url"/>
         <DataProperty IRI="#participant-info"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#participant-url"/>
-        <DataProperty IRI="#teams-info"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#participant-website"/>
@@ -703,14 +683,6 @@
         <Class IRI="#hackathons"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hackathon-url"/>
-        <Class IRI="#hackathons"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hackathon-url"/>
-        <Class IRI="#projects"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hackathon-winner"/>
         <Class IRI="#projects"/>
     </DataPropertyDomain>
@@ -744,11 +716,11 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-bubble"/>
-        <Class IRI="#teams"/>
+        <Class IRI="#team-members"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-desc"/>
-        <Class IRI="#teams"/>
+        <Class IRI="#team-members"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-followers"/>
@@ -772,7 +744,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-id"/>
-        <Class IRI="#teams"/>
+        <Class IRI="#team-members"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-likes"/>
@@ -792,7 +764,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-name"/>
-        <Class IRI="#teams"/>
+        <Class IRI="#team-members"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-number-of-skills"/>
@@ -812,7 +784,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-url"/>
-        <Class IRI="#teams"/>
+        <Class IRI="#team-members"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-website"/>

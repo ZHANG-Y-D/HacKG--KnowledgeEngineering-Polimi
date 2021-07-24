@@ -1,0 +1,8 @@
+
+
+
+1.What projects have at least 2 team members?
+2.Which "Co-located" hackathons have more than 5 judges?
+3.What projects belongs to Hackathon which end date between "2014-01-01" and "2014-12-31"
+4.What is the name and location of a participant with skills more than 5
+5.What projects did "Nathanael Alcock" participate in ？
