@@ -1,0 +1,2 @@
+define(["require","exports"],(function(_,I){"use strict";Object.defineProperty(I,"__esModule",{value:!0}),I.SEPARATOR_WIDTH_IN_EMS=I.MENU_TARGET_WIDTH_IN_EMS=I.MAX_TRAIL_WIDTH_IN_EMS=I.MAX_MENU_ITEM_WIDTH_IN_EMS=void 0,I.MAX_MENU_ITEM_WIDTH_IN_EMS=37,I.MAX_TRAIL_WIDTH_IN_EMS=28,I.MENU_TARGET_WIDTH_IN_EMS=2.625,I.SEPARATOR_WIDTH_IN_EMS=1.64}));
+//# sourceMappingURL=constants.min.js-vflD5FOXn.map
