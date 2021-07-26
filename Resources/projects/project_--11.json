@@ -1,0 +1,96 @@
+{
+  "hackathon-id": "hackatmacs",
+  "hackathon-winner": "False",
+  "project-technologies-used": "10",
+  "project-video": "",
+  "project-basis": "",
+  "project-technologies": [
+    {
+      "url": "https://devpost.com/software/built-with/codeigniter",
+      "name": "codeigniter"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/php",
+      "name": "php"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/mysql",
+      "name": "mysql"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/javascript",
+      "name": "javascript"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/html",
+      "name": "html"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/css",
+      "name": "css"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/java",
+      "name": "java"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/android",
+      "name": "android"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/bootstrap",
+      "name": "bootstrap"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/web",
+      "name": "web"
+    }
+  ],
+  "project-challenges": "",
+  "project-future-plans": "",
+  "project-purpose": "",
+  "hackathon-url": "https://hackatmacs.devpost.com/",
+  "project-title": "\u10db\u10dd\u10e1\u10ec\u10d0\u10d5\u10da\u10d4\u10d7\u10d0 \u10db\u10d0\u10e0\u10d7\u10d5\u10d8\u10e1 \u10e1\u10d8\u10e1\u10e2\u10d4\u10db\u10d0",
+  "project-inspiration": "",
+  "project-lessons-learned": "",
+  "project-accomplishments": "",
+  "project-likes": "0",
+  "hackathon-name": "hack@MACS",
+  "project-subtitle": "",
+  "project-github-url": "",
+  "project-number-of-comments": "0",
+  "team-size": "4",
+  "project-creation-timestamp": "2014-03-21T17:58:52-04:00",
+  "team": [
+    {
+      "participant-bubble": "",
+      "participant-name": "Alex Cheki",
+      "participant-desc": "",
+      "participant-url": "https://devpost.com/ch3k1",
+      "participant-id": "ch3k1"
+    },
+    {
+      "participant-bubble": "",
+      "participant-name": "Guro",
+      "participant-desc": "",
+      "participant-url": "https://devpost.com/Guro",
+      "participant-id": "Guro"
+    },
+    {
+      "participant-bubble": "",
+      "participant-name": "Crazy_infernus",
+      "participant-desc": "",
+      "participant-url": "https://devpost.com/Crazy_infernus",
+      "participant-id": "Crazy_infernus"
+    },
+    {
+      "participant-bubble": "",
+      "participant-name": "Sun Dro",
+      "participant-desc": "Software Developer, IT Architect, Penetration Tester",
+      "participant-url": "https://devpost.com/kala13x",
+      "participant-id": "kala13x"
+    }
+  ],
+  "project-url": "https://devpost.com/software/--11",
+  "project-id": "--11"
+}

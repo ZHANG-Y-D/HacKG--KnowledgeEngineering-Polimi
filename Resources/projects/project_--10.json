@@ -1,0 +1,64 @@
+{
+  "hackathon-id": "hackatmacs",
+  "hackathon-winner": "True",
+  "project-technologies-used": "2",
+  "project-video": "",
+  "project-basis": "",
+  "project-technologies": [
+    {
+      "url": "https://devpost.com/software/built-with/arduino",
+      "name": "arduino"
+    },
+    {
+      "url": "https://devpost.com/software/built-with/hardware",
+      "name": "hardware"
+    }
+  ],
+  "project-challenges": "",
+  "project-future-plans": "",
+  "project-purpose": "",
+  "hackathon-url": "https://hackatmacs.devpost.com/",
+  "project-title": "\u10da\u10d4\u10d8\u10d6\u10d4\u10e0 \u10de\u10d8\u10e3",
+  "project-inspiration": "",
+  "project-lessons-learned": "",
+  "project-accomplishments": "",
+  "project-likes": "0",
+  "hackathon-name": "hack@MACS",
+  "project-subtitle": "",
+  "project-github-url": "",
+  "project-number-of-comments": "0",
+  "team-size": "4",
+  "project-creation-timestamp": "2014-03-21T17:58:30-04:00",
+  "team": [
+    {
+      "participant-bubble": "",
+      "participant-name": "\u10db\u10d8\u10ee\u10d4\u10d8\u10da \u10ea\u10d8\u10ea\u10d8\u10e8\u10d5\u10d8\u10da\u10d8",
+      "participant-desc": "",
+      "participant-url": "https://devpost.com/mixo",
+      "participant-id": "mixo"
+    },
+    {
+      "participant-bubble": "",
+      "participant-name": "zrdiloba",
+      "participant-desc": "",
+      "participant-url": "https://devpost.com/zrdiloba",
+      "participant-id": "zrdiloba"
+    },
+    {
+      "participant-bubble": "",
+      "participant-name": "Giorgi Kvantrishvili",
+      "participant-desc": "",
+      "participant-url": "https://devpost.com/kvantri",
+      "participant-id": "kvantri"
+    },
+    {
+      "participant-bubble": "",
+      "participant-name": "glaba13",
+      "participant-desc": "",
+      "participant-url": "https://devpost.com/glaba13",
+      "participant-id": "glaba13"
+    }
+  ],
+  "project-url": "https://devpost.com/software/--10",
+  "project-id": "--10"
+}
