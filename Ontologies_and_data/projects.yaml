@@ -1,0 +1,103 @@
+prefixes:
+  hac: "http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+mappings:
+  projects:
+    sources:
+      - ['projects.json~jsonpath', "$"]
+    s: hac:$(project-id)
+    po:
+      - [a, hac:projects]
+      - [hac:hackathon-winner,$(hackathon-winner),xsd:string]
+      - [hac:hackathon-name,$(hackathon-name),xsd:string]
+      - [hac:project-technologies-used, $(project-technologies-used),xsd:integer]
+      - [hac:project-video,$(project-video),xsd:string]
+      - [hac:project-basis,$(project-basis),xsd:string]
+      - [hac:project-challenges,$(project-challenges),xsd:string]
+      - [hac:project-future-plans,$(project-future-plans),xsd:string]
+      - [hac:project-purpose,$(project-purpose),xsd:string]
+      - [hac:project-title,$(project-title),xsd:string]
+      - [hac:project-inspiration,$(project-inspiration),xsd:string]
+      - [hac:project-lessons-learned,$(project-lessons-learned),xsd:string]
+      - [hac:project-accomplishments,$(project-accomplishments),xsd:string]
+      - [hac:project-likes,$(project-likes),xsd:integer]
+      - [hac:project-subtitle,$(project-subtitle),xsd:integer]
+      - [hac:project-github-url,$(project-github-url),xsd:string]
+      - [hac:project-number-of-comments,$(project-number-of-comments),xsd:integer]
+      - [hac:team-size,$(team-size),xsd:integer]
+      - [hac:project-creation-timestamp,$(project-creation-timestamp),xsd:datetime]
+      - [hac:project-url,$(project-url),xsd:string]
+      
+      - p: hac:hackathonOf
+        o:
+          - mapping: hackathons
+            condition:
+              function: equal
+              parameters:
+              - [ str1, $(hackathon-id), s]
+              - [ str2, $(hackathon-id), o]
+              
+              
+      - p: hac:hasTechnology
+        o:
+          - mapping: technologies
+            condition:
+              function: equal
+              parameters:
+              - [ str1, 1, s]
+              - [ str2, 1, o]
+              
+      - p: hac:hasTeamMember
+        o:
+          - mapping: teamMember
+            condition:
+              function: equal
+              parameters:
+              - [ str1, 1, s]
+              - [ str2, 1, o]
+      
+  hackathons:
+    sources:
+      - ['hackathons_total.json~jsonpath', "$.[*]"]
+    s: hac:$(hackathon-id)
+    po:
+      - [a, hac:hackathons]
+      - [hac:hackathon-url,$(hackathon-url),xsd:string]
+     
+      
+  technologies:
+    sources:
+      - ['projects.json~jsonpath', '$.project-technologies[*]']
+    s: hac:$(name)
+    po:
+      - [a, hac:techonologies]
+      - [hac:url,$(url),xsd:string]
+      - [hac:name,$(name),xsd:string]
+  
+  teamMember:
+    sources:
+      - ['projects.json~jsonpath', '$.team[*]']
+    s: hac:$(participant-id)_tName
+    po:
+      - [a, hac:team-member]
+      - [hac:participant-bubble,$(participant-bubble),xsd:string]
+      - [hac:participant-desc,$(participant-desc),xsd:string]
+      - p: hac:relatesToParticipant
+        o:
+          - mapping: participants
+            condition:
+              function: equal
+              parameters:
+              - [ str1, $(participant-id), s]
+              - [ str2, $(participant-id), o]
+  
+  participants:
+    sources:
+      - ['participants_total.json~jsonpath', "$.[*]"]
+    s: hac:$(participant-id)
+    po:
+      - [a, hac:participants]
+
+  
+  
