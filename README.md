@@ -1,7 +1,7 @@
 # Hackathons
 This is the Project of Polimi Knowledge Engineering Course 2020/2021. <br>
 Course Professor:  [Marco Colombetti](https://www.deib.polimi.it/ita/personale/dettagli/60520) <br>
-Project Professor: [Riccardo Tommasini](https://riccardotommasini.com/)
+Project Professor: [Riccardo Tommasini](https://riccardotommasini.com/) <br>
 Project Slide: [HacKG-KE.pdf](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Documentation/HacKG-KE.pdf)
 
 
