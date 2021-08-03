@@ -6,14 +6,14 @@ Project Slide: [HacKG-KE.pdf](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngin
 
 
 ## Ontology
-Hackathon ontology includes a set of classes and properties about hackathon events.
-* Hackathons: pieces of data describe hackathon events
-* Prizes: every hackathon event sets up prizes
-* Judges: every hackathon event  has several judges
-* Judging-criteria: hackathon events have judging criteria
+Hackathon ontology includes a set of classes and properties about Hackathon events.
+* Hackathons: pieces of data describe Hackathon events
+* Prizes: every Hackathon event sets up prizes
+* Judges: every Hackathon event  has several judges
+* Judging-criteria: Hackathon events have judging criteria
 * Participants: relate to team members who consist of teams participating in projects
 * Skills: participants have some skills which can be used as technologies  required by projects
-* Projects: every project relates to a hackathon event and  has several team members
+* Projects: every project relates to a Hackathon event and  has several team members
 * Technologies: required to complete projects
 * Team-members: every project has a team including some members
 
