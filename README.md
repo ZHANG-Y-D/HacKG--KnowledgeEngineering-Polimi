@@ -1,5 +1,5 @@
 # Hackathons
-This is the Project of Polimi [Knowledge Engineering](https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2020&k_cf=225&k_corso_la=481&k_indir=T2A&codDescr=089012&lang=IT&semestre=2&idGruppo=4152&idRiga=253863) Course 2020/2021. <br>
+This is the Project of Polimi Knowledge Engineering Course 2020/2021. <br>
 Course Professor:  [Marco Colombetti](https://www.deib.polimi.it/ita/personale/dettagli/60520) <br>
 Project Professor: [Riccardo Tommasini](https://riccardotommasini.com/) <br>
 Project Slide: [HacKG-KE.pdf](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Documentation/HacKG-KE.pdf)
@@ -7,24 +7,24 @@ Project Slide: [HacKG-KE.pdf](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngin
 
 ## Ontology
 Hackathon ontology includes a set of classes and properties about Hackathon events.
-* Hackathons: pieces of data describe Hackathon events
-* Prizes: every Hackathon event sets up prizes
-* Judges: every Hackathon event  has several judges
-* Judging-criteria: Hackathon events have judging criteria
-* Participants: relate to team members who consist of teams participating in projects
-* Skills: participants have some skills which can be used as technologies  required by projects
-* Projects: every project relates to a Hackathon event and  has several team members
-* Technologies: required to complete projects
-* Team-members: every project has a team including some members
+* Hackathons: pieces of data describe Hackathon events, a Hackathon event has some important information, such as the description of the event, the number of participants, prizes and judges, whether the Hackathon is colocated. 
+* Prizes: every Hackathon event sets up prizes, a prize of each Hackathon event has its title and content.
+* Judges: every Hackathon event has several judges with their roles and names.
+* Judging-criteria: every Hackathon event has judging criteria, a judging criteria has a detailed description text.
+* Participants: relate to team members who consist of teams participating in projects, a participant has his/her name, the location, the number of skills.
+* Skills: participants have some skills which can be used as technologies required by projects.
+* Projects: every project relates to a Hackathon event and  has several team members, a project has a title/subtitle, the information of its related Hackathon event and participants. 
+* Technologies: required to complete projects.
+* Team-members: every project has a team including some members, in addition to the participant information, a team member also has the description of participant's occupation.
 
 ## Data Linking
 
 #### Data Retrieval 
-The dataset is composed of many separate JSON files and stored in [Dropbox](https://www.dropbox.com/sh/4i4tp6y0kl2lk24/AAAnU8WV-XFa_cMGMNclrAiLa?dl=0), we wrote two Python scripts to download these files, merge them together and generate the RDF triples.
-* [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py): To download (a part of) resource data.
+The dataset is composed of many separate JSON files and stored in [Dropbox](https://www.dropbox.com/sh/4i4tp6y0kl2lk24/AAAnU8WV-XFa_cMGMNclrAiLa?dl=0), we wrote a Python script to downloads these files and merges them together.
+* [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py): To download a part of resources data.
 * [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Gen_RDF.py): To merge all separate json files and generate the RDF triples.
 
-**Attention**: The [Resources](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/tree/main/Resources) folder already contains a part of resource data, and if you want more, you can run the [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py).
+**Attention**: If you want to access data, you can decompress the Resources.zip. It already contains a part of the data, and if you want more, you can run the [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py).
 
 
 #### YARRRML (https://rml.io/yarrrml/matey/#)
@@ -74,7 +74,7 @@ The RDF triples have been generated from the rml rules. For this we used the rml
     WHERE {
         ?hackathon a  <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#hackathons>.
         ?hackathon hac:hackathon-is-colocated ?colocated.
-        ?hackathon hac:hackathon-number-of-judges ?numOfJudges.
+        ?hackathon hac:hackathon-number-of-judges ?numOfJudges
         FILTER(?colocated="True" && ?numOfJudges>=5)
     }
   ```
@@ -124,7 +124,7 @@ The RDF triples have been generated from the rml rules. For this we used the rml
       ?teammember hac:relatesToParticipant ?participant.
       ?project a  <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#projects>.
       ?project hac:hasTeamMember ?teammember.
-      ?project hac:project-url ?url.
+      ?project hac:project-url ?url
       FILTER(?name="Anano Bodokia")
     }
     ```
