@@ -7,15 +7,15 @@ Project Slide: [HacKG-KE.pdf](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngin
 
 ## Ontology
 Hackathon ontology includes a set of classes and properties about Hackathon events.
-* Hackathons: pieces of data describe Hackathon events, a Hackathon event has some important information, such as the description of the event, the number of participants, prizes and judges, whether the Hackathon is colocated. 
-* Prizes: every Hackathon event sets up prizes, a prize of each Hackathon event has its title and content.
-* Judges: every Hackathon event has several judges with their roles and names.
-* Judging-criteria: every Hackathon event has judging criteria, a judging criteria has a detailed description text.
-* Participants: relate to team members who consist of teams participating in projects, a participant has his/her name, the location, the number of skills.
-* Skills: participants have some skills which can be used as technologies required by projects.
-* Projects: every project relates to a Hackathon event and  has several team members, a project has a title/subtitle, the information of its related Hackathon event and participants. 
-* Technologies: required to complete projects.
-* Team-members: every project has a team including some members, in addition to the participant information, a team member also has the description of participant's occupation.
+* **Hackathons**: pieces of data describe Hackathon events, a Hackathon event has some important information, such as the description of the event, the number of participants, prizes and judges, whether the Hackathon is colocated. 
+* **Prizes**: every Hackathon event sets up prizes, a prize of each Hackathon event has its title and content.
+* **Judges**: every Hackathon event has several judges with their roles and names.
+* **Judging-criteria**: every Hackathon event has judging criteria, a judging criteria has a detailed description text.
+* **Participants**: relate to team members who consist of teams participating in projects, a participant has his/her name, the location, the number of skills.
+* **Skills**: participants have some skills which can be used as technologies required by projects.
+* **Projects**: every project relates to a Hackathon event and  has several team members, a project has a title/subtitle, the information of its related Hackathon event and participants. 
+* **Technologies**: required to complete projects.
+* **Team-members**: every project has a team including some members, in addition to the participant information, a team member also has the description of participant's occupation.
 
 ## Data Linking
 
@@ -42,12 +42,12 @@ The RDF triples have been generated from the rml rules. For this we used the rml
     java -jar rmlmapper-4.9.0.jar.jar -m participants.rml.ttl -o participants.rdf
     java -jar rmlmapper-4.9.0.jar.jar -m projects.rml.ttl -o projects.rdf
 
+In our cases, the [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Gen_RDF.py) will execute automatically these commands.
+
 ## Publishing & Querying
 1. SPARQL endpoint was created using Apache- Jena-Fuseki.
 2. Converted RDF triples to N-triple format and upload them to Fuseki as datasets.
 3. Translated competency questions to SPARQL.
-
-
 
 
 ## Competency Questions with querying code
