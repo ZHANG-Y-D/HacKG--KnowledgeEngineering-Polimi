@@ -20,7 +20,7 @@ Hackathon ontology includes a set of classes and properties about Hackathon even
 ## Data Linking
 
 #### Data Retrieval 
-The dataset is composed of many separate JSON files and stored in Dropbox, we wrote a Python script to downloads these files and merges them together.
+The dataset is composed of many separate JSON files and stored in [Dropbox](https://www.dropbox.com/sh/4i4tp6y0kl2lk24/AAAnU8WV-XFa_cMGMNclrAiLa?dl=0), we wrote a Python script to downloads these files and merges them together.
 * [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py): To download a part of resources data.
 * [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Gen_RDF.py): To merge all separate json files and generate the RDF triples.
 
