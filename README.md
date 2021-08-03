@@ -1,5 +1,5 @@
 # Hackathons
-This is the Project of Polimi Knowledge Engineering Course 2020/2021. <br>
+This is the Project of Polimi [Knowledge Engineering](https://www4.ceda.polimi.it/manifesti/manifesti/controller/ManifestoPublic.do?EVN_DETTAGLIO_RIGA_MANIFESTO=evento&aa=2020&k_cf=225&k_corso_la=481&k_indir=T2A&codDescr=089012&lang=IT&semestre=2&idGruppo=4152&idRiga=253863) Course 2020/2021. <br>
 Course Professor:  [Marco Colombetti](https://www.deib.polimi.it/ita/personale/dettagli/60520) <br>
 Project Professor: [Riccardo Tommasini](https://riccardotommasini.com/) <br>
 Project Slide: [HacKG-KE.pdf](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Documentation/HacKG-KE.pdf)
@@ -20,11 +20,11 @@ Hackathon ontology includes a set of classes and properties about Hackathon even
 ## Data Linking
 
 #### Data Retrieval 
-The dataset is composed of many separate JSON files and stored in [Dropbox](https://www.dropbox.com/sh/4i4tp6y0kl2lk24/AAAnU8WV-XFa_cMGMNclrAiLa?dl=0), we wrote a Python script to downloads these files and merges them together.
-* [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py): To download a part of resources data.
+The dataset is composed of many separate JSON files and stored in [Dropbox](https://www.dropbox.com/sh/4i4tp6y0kl2lk24/AAAnU8WV-XFa_cMGMNclrAiLa?dl=0), we wrote two Python scripts to download these files, merge them together and generate the RDF triples.
+* [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py): To download (a part of) resource data.
 * [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Gen_RDF.py): To merge all separate json files and generate the RDF triples.
 
-**Attention**: If you want to access data, you can decompress the Resources.zip. It already contains a part of the data, and if you want more, you can run the [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py).
+**Attention**: The [Resources](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/tree/main/Resources) folder already contains a part of resource data, and if you want more, you can run the [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py).
 
 
 #### YARRRML (https://rml.io/yarrrml/matey/#)
