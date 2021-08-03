@@ -29,7 +29,7 @@ The dataset is composed of many separate JSON files and stored in Dropbox, we wr
 
 #### YARRRML (https://rml.io/yarrrml/matey/#)
 A set of rules has been written to fit the Hackathon ontology model. These R2RML rules have been written and parsed using the Yarrrml matey tool. In our cases:
-* [hackathons.rml.ttl](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Ontologies_and_data/hackathons.rml.ttl): Rules mapping the hackathons associated to judges, prizes, and Judging Criteria. 
+* [hackathons.rml.ttl](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Ontologies_and_data/hackathons.rml.ttl): Rules mapping the hackathons associated to judges, prizes, and judging criteria. 
 * [participants.rml.ttl](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Ontologies_and_data/participants.rml.ttl): Rules mapping the participants associated with skills. 
 * [projects.rml.ttl](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Ontologies_and_data/projects.rml.ttl): Rules mapping the projects associated with hackathons, technologies, and team members. 
 
