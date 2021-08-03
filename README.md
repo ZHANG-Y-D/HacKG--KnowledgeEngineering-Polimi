@@ -20,11 +20,11 @@ Hackathon ontology includes a set of classes and properties about Hackathon even
 ## Data Linking
 
 #### Data Retrieval 
-The dataset is composed of many separate JSON files and stored in [Dropbox](https://www.dropbox.com/sh/4i4tp6y0kl2lk24/AAAnU8WV-XFa_cMGMNclrAiLa?dl=0), we wrote a Python script to downloads these files and merges them together.
-* [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py): To download a part of resources data.
+The dataset is composed of many separate JSON files and stored in [Dropbox](https://www.dropbox.com/sh/4i4tp6y0kl2lk24/AAAnU8WV-XFa_cMGMNclrAiLa?dl=0), we wrote two Python scripts to download these files, merge them together and generate the RDF triples.
+* [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py): To download (a part of) resource data.
 * [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/Gen_RDF.py): To merge all separate json files and generate the RDF triples.
 
-**Attention**: If you want to access data, you can decompress the Resources.zip. It already contains a part of the data, and if you want more, you can run the [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py).
+**Attention**:  The [Resources](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/tree/main/Resources) folder already contains a part of resource data, and if you want more, you can run the [DownloadResourceFromDropbox.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngineering-Polimi/blob/main/DownloadResourceFromDropbox.py).
 
 
 #### YARRRML (https://rml.io/yarrrml/matey/#)
@@ -61,7 +61,7 @@ In our cases, the [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngi
         ?project a  <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#projects>.
         ?project hac:project-title ?title.
         ?project hac:team-size ?teamsize.
-        FILTER(?teamsize>=2).
+        FILTER(?teamsize>=2)
     }
     ORDER BY (?teamsize)
   ```
@@ -74,7 +74,7 @@ In our cases, the [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngi
     WHERE {
         ?hackathon a  <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#hackathons>.
         ?hackathon hac:hackathon-is-colocated ?colocated.
-        ?hackathon hac:hackathon-number-of-judges ?numOfJudges
+        ?hackathon hac:hackathon-number-of-judges ?numOfJudges.
         FILTER(?colocated="True" && ?numOfJudges>=5)
     }
   ```
@@ -124,7 +124,7 @@ In our cases, the [Gen_RDF.py](https://github.com/ZHANG-Y-D/HacKG--KnowledgeEngi
       ?teammember hac:relatesToParticipant ?participant.
       ?project a  <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#projects>.
       ?project hac:hasTeamMember ?teammember.
-      ?project hac:project-url ?url
+      ?project hac:project-url ?url.
       FILTER(?name="Anano Bodokia")
     }
     ```
