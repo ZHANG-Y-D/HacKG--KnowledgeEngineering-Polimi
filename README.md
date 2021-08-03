@@ -13,9 +13,9 @@ Hackathon ontology includes a set of classes and properties about hackathon even
 * Judging-criteria: hackathon events have judging criteria
 * Participants: relate to team members who consist of teams participating in projects
 * Skills: participants have some skills which can be used as technologies  required by projects
-* Projects: each project relates to a hackathon event and  has several team members
+* Projects: every project relates to a hackathon event and  has several team members
 * Technologies: required to complete projects
-* Team-members: each project has a team including some members
+* Team-members: every project has a team including some members
 
 ## Data Linking
 
