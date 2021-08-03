@@ -74,7 +74,7 @@ The RDF triples have been generated from the rml rules. For this we used the rml
     WHERE {
         ?hackathon a  <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#hackathons>.
         ?hackathon hac:hackathon-is-colocated ?colocated.
-        ?hackathon hac:hackathon-number-of-judges ?numOfJudges
+        ?hackathon hac:hackathon-number-of-judges ?numOfJudges.
         FILTER(?colocated="True" && ?numOfJudges>=5)
     }
   ```
@@ -124,7 +124,7 @@ The RDF triples have been generated from the rml rules. For this we used the rml
       ?teammember hac:relatesToParticipant ?participant.
       ?project a  <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#projects>.
       ?project hac:hasTeamMember ?teammember.
-      ?project hac:project-url ?url
+      ?project hac:project-url ?url.
       FILTER(?name="Anano Bodokia")
     }
     ```
