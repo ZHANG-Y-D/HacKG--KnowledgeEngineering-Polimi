@@ -44,7 +44,7 @@ The RDF triples have been generated from the rml rules. For this we used the rml
 
 ## Publishing & Querying
 1. SPARQL endpoint was created using Apache- Jena-Fuseki.
-2. Converted RDF format files to NT format and upload them to Fuseki as datasets.
+2. Converted RDF triples to N-triple format and upload them to Fuseki as datasets.
 3. Translated competency questions to SPARQL.
 
 
