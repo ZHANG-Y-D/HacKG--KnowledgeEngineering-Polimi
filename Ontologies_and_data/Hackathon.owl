@@ -13,31 +13,31 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#judges"/>
+        <Class IRI="#Judge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#judging-criteria"/>
+        <Class IRI="#Judging-criterion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#prizes"/>
+        <Class IRI="#Prize"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#skills"/>
+        <Class IRI="#Skill"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#technologies"/>
+        <Class IRI="#Technology"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hackathonOf"/>
@@ -271,8 +271,8 @@
         <DataProperty IRI="#url"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#skills"/>
-        <Class IRI="#technologies"/>
+        <Class IRI="#Skill"/>
+        <Class IRI="#Technology"/>
     </EquivalentClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasSkill"/>
@@ -292,67 +292,67 @@
     </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hackathonOf"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasJudge"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasJudgingCriteria"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPrize"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSkill"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTeamMember"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTechnology"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#relatesToParticipant"/>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hackathonOf"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasJudge"/>
-        <Class IRI="#judges"/>
+        <Class IRI="#Judge"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasJudgingCriteria"/>
-        <Class IRI="#judging-criteria"/>
+        <Class IRI="#Judging-criterion"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPrize"/>
-        <Class IRI="#prizes"/>
+        <Class IRI="#Prize"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSkill"/>
-        <Class IRI="#skills"/>
+        <Class IRI="#Skill"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTeamMember"/>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTechnology"/>
-        <Class IRI="#technologies"/>
+        <Class IRI="#Technology"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#relatesToParticipant"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hackathon-description-header"/>
@@ -608,275 +608,275 @@
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-description-header"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-description-text"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-eligibility"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-end-date"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-has-ended"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-id"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-id"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-is-colocated"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-location-address"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-location-description"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-location-google-maps"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-name"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-number-of-judges"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-number-of-judging-criteria"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-number-of-participants"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-number-of-prizes"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-prizes-total"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-requirements"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-rules"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hackathon-winner"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#has-projects"/>
-        <Class IRI="#hackathons"/>
+        <Class IRI="#Hackathon"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#judge-name"/>
-        <Class IRI="#judges"/>
+        <Class IRI="#Judge"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#judge-role"/>
-        <Class IRI="#judges"/>
+        <Class IRI="#Judge"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#judging-criterion"/>
-        <Class IRI="#judging-criteria"/>
+        <Class IRI="#Judging-criterion"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#name"/>
-        <Class IRI="#skills"/>
+        <Class IRI="#Skill"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#name"/>
-        <Class IRI="#technologies"/>
+        <Class IRI="#Technology"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-bio"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-bubble"/>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-desc"/>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-followers"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-following"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-github"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-hackathons"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-id"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-id"/>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-likes"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-linkedin"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-location"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-name"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-name"/>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-number-of-skills"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-projects"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-twitter"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-url"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-url"/>
-        <Class IRI="#team-members"/>
+        <Class IRI="#Team-member"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#participant-website"/>
-        <Class IRI="#participants"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#prize-content"/>
-        <Class IRI="#prizes"/>
+        <Class IRI="#Prize"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#prize-title"/>
-        <Class IRI="#prizes"/>
+        <Class IRI="#Prize"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-accomplishments"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-basis"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-challenges"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-creation-timestamp"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-future-plans"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-github-url"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-id"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-inspiration"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-lessons-learned"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-likes"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-number-of-comments"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-purpose"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-subtitle"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-technologies-used"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-title"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-url"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#project-video"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#team-size"/>
-        <Class IRI="#projects"/>
+        <Class IRI="#Project"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#url"/>
-        <Class IRI="#skills"/>
+        <Class IRI="#Skill"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#url"/>
-        <Class IRI="#technologies"/>
+        <Class IRI="#Technology"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hackathon-description-header"/>
@@ -948,10 +948,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hackathon-rules"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hackathon-url"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1130,6 +1126,92 @@
         <DataProperty IRI="#url"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hackathon</IRI>
+        <Literal>pieces of data describe Hackathon events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Judge</IRI>
+        <Literal>pieces of data describe judges participating in each Hackathons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Judging-criterion</IRI>
+        <Literal>pieces of data describe judging criteria set up in Hackathon events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Participant</IRI>
+        <Literal>pieces of data describe persons who can participate in projects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Prize</IRI>
+        <Literal>pieces of data describe prizes set up in Hackaton events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Project</IRI>
+        <Literal>pieces of data describe projects of Hackathon events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Skill</IRI>
+        <Literal>pieces of data describe skills of different participants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Team-member</IRI>
+        <Literal>pieces of data describe team members participating in different projects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Technology</IRI>
+        <Literal>pieces of data descirbe technology required by different projects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hackathonOf</IRI>
+        <Literal>Every project relates to a hackathon event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasJudge</IRI>
+        <Literal>Every hackathon event has several judges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasJudgingCriteria</IRI>
+        <Literal>Every hackathon event have its judging criteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrize</IRI>
+        <Literal>Every hackathon event sets up prizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSkill</IRI>
+        <Literal>Participants have some skills which can meet the technologies 
+required by projects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTeamMember</IRI>
+        <Literal>Every project has a team including some members</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTechnology</IRI>
+        <Literal>Every project requires some technologies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#relatesToParticipant</IRI>
+        <Literal>Every team member relates to different participants</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

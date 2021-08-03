@@ -82,7 +82,7 @@ map:om_011 a rr:ObjectMap;
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_012 a rr:ObjectMap;
-    rml:reference "hackathon-url";
+    rml:reference "hackathon-id";
     rr:termType rr:Literal;
     rr:datatype <http://www.w3.org/2001/XMLSchema#string>.
 map:om_013 a rr:ObjectMap;
@@ -193,7 +193,7 @@ map:pm_010 a rr:PredicateMap;
 map:pm_011 a rr:PredicateMap;
     rr:constant <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#hackathon-location-google-maps>.
 map:pm_012 a rr:PredicateMap;
-    rr:constant <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#hackathon-url>.
+    rr:constant <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#hackathon-id>.
 map:pm_013 a rr:PredicateMap;
     rr:constant <http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#hackathon-location-address>.
 map:pm_014 a rr:PredicateMap;
@@ -363,7 +363,7 @@ map:ptm_002 rr:constant "1".
 map:rules_000 a <http://rdfs.org/ns/void#Dataset>;
     <http://rdfs.org/ns/void#exampleResource> map:map_hackathons_000, map:map_hackathon-judges_000, map:map_hackathon-prizes_000, map:map_hackathon-judging-criteria_000.
 map:s_000 a rr:SubjectMap;
-    rr:template "http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#{hackathon-id}".
+    rr:template "http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#{hackathon-url}".
 map:s_001 a rr:SubjectMap;
     rr:template "http://www.semanticweb.org/hezhang/ontologies/2021/6/Hackathon#{judge-name}".
 map:s_002 a rr:SubjectMap;

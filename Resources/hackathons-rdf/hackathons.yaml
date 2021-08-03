@@ -6,7 +6,7 @@ mappings:
   hackathons:
     sources:
       - ['hackathons.json~jsonpath', "$"]
-    s: hac:$(hackathon-id)
+    s: hac:$(hackathon-url)
     po:
       - [a, hac:hackathons]
       - [hac:hackathon-description-text, $(hackathon-description-text),xsd:string]
@@ -20,7 +20,7 @@ mappings:
       - [hac:hackathon-requirements,$(hackathon-requirements),xsd:string]
       - [hac:hackathon-rules,$(hackathon-rules),xsd:string]
       - [hac:hackathon-location-google-maps,$(hackathon-location-google-maps),xsd:string]
-      - [hac:hackathon-url,$(hackathon-url),xsd:string]
+      - [hac:hackathon-id,$(hackathon-id),xsd:string]
       - [hac:hackathon-location-address,$(hackathon-location-address),xsd:string]
       - [hac:hackathon-description-header,$(hackathon-description-header),xsd:string]
       - [hac:hackathon-prizes-total,$(hackathon-prizes-total),xsd:integer]
