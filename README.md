@@ -130,5 +130,5 @@ The RDF triples have been generated from the rml rules. For this we used the rml
     ```
 
 ## Author
-[He ZhiTao](https://github.com/zhitaohe-polimi)    <br>
-[Zhang YueDong](https://github.com/ZHANG-Y-D)
+[He Zhitao](https://github.com/zhitaohe-polimi)    <br>
+[Zhang Yuedong](https://github.com/ZHANG-Y-D)
